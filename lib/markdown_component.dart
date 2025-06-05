@@ -131,6 +131,7 @@ abstract class BlockMd extends MarkdownComponent {
     if (length > 0) {
       child = UnorderedListView(
         spacing: length * 1.0,
+        padding: length * 4.0,
         textDirection: config.textDirection,
         child: child,
       );
