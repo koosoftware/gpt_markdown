@@ -127,7 +127,7 @@ abstract class BlockMd extends MarkdownComponent {
     var spaces = matches?.namedGroup('spaces');
     var length = spaces?.length ?? 0;
     var child = build(context, text, config);
-    length = min(length, 4);
+    length = min(length, 6);
     if (length > 0) {
       child = UnorderedListView(
         spacing: length * 1.0,
